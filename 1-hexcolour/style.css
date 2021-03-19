@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #080808;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+    background: none;
+    padding: 10px 20px;
+    opacity: 90%;
+}
+
+.nav-link,
+.navbar-brand {
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav-link {
+    margin-right: 1em !important;
+}
+
+.nav-link:hover {
+    color: rgb(184, 0, 0);
+}
+
+.navbar a:hover {
+    color:rgb(184, 0, 0)
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+
+.description {
+    left: 50%;
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%, -55%);
+    text-align: center;
+}
+
+.description .accordian {
+    min-width: 100%;
+}
+
+.description h1 {
+    color: #b80000;
+}
+
+.description p {
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.description button {
+    border: 1px solid #222;
+    background-color:#080808;
+    color: #fff;
+}
+
+.description button:hover {
+    border: 1px solid #111;
+    background-color: #080808;
+    color:#b80000;
+}
+
+.portfolio-items {
+
+}
+
+.portfolio-items h2 a:hover {
+    color: white;
+}
+
+.portfolio-items h2 a {
+    text-decoration: none;
+    color: #333
+}
+
