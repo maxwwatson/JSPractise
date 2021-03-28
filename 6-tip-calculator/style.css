@@ -5,6 +5,7 @@ body {
     margin: 0;
     background: #080808;
     font-family: 'Open Sans', sans-serif;
+    color: #fff;
 }
 
 .navbar {
@@ -38,8 +39,6 @@ body {
 .description {
     padding-top: 250px;
     text-align: center;
-    max-width: 1000px;
-    margin: auto;
 }
 
 .description .accordian {
@@ -48,7 +47,6 @@ body {
 
 .description h1 {
     color: #b80000;
-    font-size: 4em;
 }
 
 .description p {
@@ -69,10 +67,6 @@ body {
     color:#b80000;
 }
 
-.portfolio-items {
-    margin-top: 20px;
-    padding: 20px;
-}
 
 .portfolio-items h2 a:hover {
     color: white;
@@ -83,36 +77,66 @@ body {
     color: #333
 }
 
-.portfolio-title {
-    color: white;
-}
-
-.portfolio {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.portfolio-items:first-child {
+.calculator {
 
 }
 
-.portfolio-items:last-child {
-
-}
-
-.view-projects {
-    text-decoration: none;
+.calculator-display {
+    background-color:#222;
     color: #fff;
 }
 
-.view-projects:hover {
-    color:#b80000;
+.calculator-keys {
+    background-color: #333;
+    color: #fff;
 }
 
+.grid-container {
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: #222;
+    font-size: 30px;
+    max-width: 500px;
+    text-align: center;
+}
+
+.grid-item {
+    display: flex;
+    border: 1px solid #444;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item:hover {
+    color:#b80000;
+
+}
+
+#total {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    border: 1px solid #444;
+}
+#equals {
+    grid-row-start: 3;
+    grid-row-end: 7;
+    grid-column: 4;
+    background-color: #cc0000ad;
+}
+
+#equals:hover {
+    color: #fff;
+    background-color: #cc0000;
+}
+
+#total {
+    background-color: #000;
+}
 
 @media only screen and (max-width: 600px) {
     .description {
         padding-top: 100px;
     }
 }
+

@@ -5,6 +5,7 @@ body {
     margin: 0;
     background: #080808;
     font-family: 'Open Sans', sans-serif;
+    color: #fff;
 }
 
 .navbar {
@@ -38,8 +39,6 @@ body {
 .description {
     padding-top: 250px;
     text-align: center;
-    max-width: 1000px;
-    margin: auto;
 }
 
 .description .accordian {
@@ -48,7 +47,6 @@ body {
 
 .description h1 {
     color: #b80000;
-    font-size: 4em;
 }
 
 .description p {
@@ -69,10 +67,6 @@ body {
     color:#b80000;
 }
 
-.portfolio-items {
-    margin-top: 20px;
-    padding: 20px;
-}
 
 .portfolio-items h2 a:hover {
     color: white;
@@ -83,32 +77,53 @@ body {
     color: #333
 }
 
-.portfolio-title {
+.mModal {
+    /* display: none; */
+    display: none;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1;
+    padding-top: 45vh;
+    height: 100%;
+    width: 100%;
+    vertical-align: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    
+}
+.mModalContent {
+    flex-direction: column;
+    margin: auto;
+    max-width: 80%;
+    padding: 20px;
+    border: 2px solid #222;
+    background-color: #111;
+}
+
+/* Close button for modal */
+.close1 {
+    float: right;
+    font-size: 1.8em;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.close1:hover {
+    color:#b80000
+}
+
+/* Form */
+#email { 
+    background-color: #222;
+    border: none;
+    color: white;
+}
+#submit {
+    background-color: #111;
+
     color: white;
 }
 
-.portfolio {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.portfolio-items:first-child {
-
-}
-
-.portfolio-items:last-child {
-
-}
-
-.view-projects {
-    text-decoration: none;
-    color: #fff;
-}
-
-.view-projects:hover {
-    color:#b80000;
-}
 
 
 @media only screen and (max-width: 600px) {
@@ -116,3 +131,4 @@ body {
         padding-top: 100px;
     }
 }
+
