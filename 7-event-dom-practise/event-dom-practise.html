@@ -11,7 +11,13 @@
     <title>Pop-up</title>
 </head>
 
-<body id="body" >
+<body id="body" 
+    onmousedown="myFunction(event)"
+    onmouseup="myFunction(event)"
+    onkeydown="myFunction(event)"
+    onkeyup="myFunction(event)"  
+      
+>
     <!-- Bootstrap Nav Menu -->
     <nav class="navbar navbar-expand-md">
         <a class="navbar-brand" href="../index.html">Max Watson</a>
@@ -39,42 +45,19 @@
     <header class="page-header header container-fluid">
         <div class="description">
             <div class="container-md">
-                <h1>Tip-Calculator</h1>
-                <p>HTML CSS Javascript Bootstrap jQuery</p>
+                <h1>Event DOM practise</h1>
+                <p>HTML CSS Javascript</p>
+                <p>Press any key or click mouse to see what event was triggered</p>
+                <div class="event-demo">
+                    <p>Event: <span id="demo"></span></p>
+                    <p># of Changes: <span id="changes"></span></p>
+                </div>
+                
             </div>
         </div>  
     </header>
 
-    <div class="calculator">
-        <div class="calculator-display"></div>
-        <div class="calculator-keys"></div>
-    </div>
-
-    <div class="grid-container">
-        <div  id="total"><span id="theCount">-</span></div>
-
-        <div class="grid-item" id="plus">&plus;</div>
-        <div class="grid-item" id="minus">&minus;</div>
-        <div class="grid-item" id="times">&times;</div>  
-        <div class="grid-item" id="divide">&divide;</div>
-
-        <div class="grid-item">7</div>
-        <div class="grid-item">8</div>
-        <div class="grid-item">9</div>
-        <div class="grid-item" id="equals">&equals;</div> <!-- Grid item 7-->
-
-        <div class="grid-item">4</div>
-        <div class="grid-item">5</div>
-        <div class="grid-item">6</div>
-
-        <div class="grid-item">1</div>
-        <div class="grid-item">2</div>
-        <div class="grid-item">3</div>
-
-        <div class="grid-item">0</div>
-        <div class="grid-item">-</div>
-        <div class="grid-item">AC</div>
-    </div>
+    
 
         
 
